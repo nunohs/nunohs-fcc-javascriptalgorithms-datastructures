@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+:root {
+  --purple:#171145;
+  --white: #ffffff;
+  --grey:#333;
+  --black:#0f0f0f;
+  --blue: #4e56e6;
+  --less-black: #6a6b85;
+  --less-grey: #aaa8bd;
+  --less-purple: #4a3dc4;
+  --orange:#d1811f;
+}
+
+
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--purple); /* Subtle background for contrast */
+  color: #333; /* Neutral text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+header {
+  color: var(--white); /* Dark text for contrast */
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  margin-bottom:-20px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+main {
+  margin-top: 20px;
+  width: 90%;
+  max-width: 600px;
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+/* Search Section */
+#searching-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#searching-section h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: var(--black); /* Pokémon blue */
+}
+
+#search-input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid var(--less-grey);
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+#search-button {
+  background-color: var(--less-purple); /* Pokémon orange */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+  background-color: var(--orange); 
+}
+
+/* Output Section */
+#output-section {
+  background-color: var(--white);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#output-section h3 {
+  margin: 10px 0;
+  font-size: 1.3rem;
+  color: var(--less-purple); /* Pokémon blue */
+  display: inline; /* Or inline-block */
+  margin-right: 5px; /* Optional: Adds space between the elements */
+}
+
+#output-section p {
+  font-size: 1rem;
+  color: var(--grey); /* Gray for additional details */
+}
+
+#pokemon-image {
+  display: block;
+  margin: 10px 0; /* Add some spacing above and below the image */
+  text-align: center; /* Center the image horizontally */
+}
+
+#pokemon-image img {
+  max-width: 300px; /* Limit image size */
+  height: auto; /* Maintain aspect ratio */
+ 
+}
+
+/* Stats Section */
+#stats {
+  background-color: var(--white);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#stats h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: var(--grey);
+  border-bottom: 2px solid var(--black); /* Pokémon blue separator */
+  padding-bottom: 5px;
+}
+
+#stats p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: var(--grey); /* Subtle gray for stats */
+}
+
+#stats span {
+  font-weight: bold;
+  color: var(--less-purple); /* Highlight stats in Pokémon blue */
+}
+
+/* Buttons and Interactions */
+button:focus,
+input:focus {
+  outline: 2px solid var(--less-purple);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  main {
+    width: 95%;
+  }
+
+  #search-input {
+    width: 90%;
+  }
+}

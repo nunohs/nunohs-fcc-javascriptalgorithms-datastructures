@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+
+  --section-bg-color: #ffffff;
+ 
+  --grey:#333;
+  --black:#0f0f0f;
+  --blue: #4e56e6;
+  --less-black: #6a6b85;
+}
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color:var(--section-bg-color);
+  color: var( --grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  color: var( --grey);
+  text-align: center;
+  margin: 0;
+}
+
+main {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 90%;
+  max-width: 600px;
+}
+
+h2 {
+  font-size: 1.25rem;
+  color: var( --grey);
+  margin-bottom: 1rem;
+}
+
+/* Input section styles */
+#input-section {
+  margin-bottom: 1.5rem;
+}
+
+#user-input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid  var( --grey);
+  border-radius: 4px;
+}
+
+#total {
+  font-weight: bold;
+  color:  var( --blue);
+}
+
+
+
+
+#output-section {
+  display: none; /* Hide the section initially */
+  color: var(--blue); /* White text */
+  background-color: #333; /* Dark background to make text visible */
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+#results-span p {
+  margin-top: 15px; /* Add spacing between each <p> element */
+  margin-bottom: 15px; /* Optional: Add spacing below each <p> */
+  line-height: 1.5; /* Increase line height for better readability */
+}
+
+/* Buttons section styles */
+#buttons-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top:15px;
+}
+
+.btn {
+  background-color:  var( --blue);
+  color:  #ffff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color:  var( --blue);
+}
+
+.btn:active {
+  background-color:  var( --blue);
+}

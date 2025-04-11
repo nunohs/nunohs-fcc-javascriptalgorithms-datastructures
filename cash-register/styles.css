@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+
+  --section-bg-color: #ffffff;
+ 
+  --grey:#333;
+  --black:#0f0f0f;
+  --blue: #4e56e6;
+  --less-black: #6a6b85;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--grey);
+  background-color: var(--section-bg-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  background-color:var(--grey);
+  color: #fff;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+main {
+  margin-top: 20px;
+  width: 90%;
+  max-width: 600px;
+  background: var(--black);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#change-div {
+  display: none; /* Hide the change due section initially */
+  color: white; /* White text */
+  background-color: #333; /* Dark background to make text visible */
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+/* Middle Section */
+#middle-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+#middle-section input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid var(--grey);;
+  border-radius: 5px;
+}
+
+#middle-section p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Last Section */
+#last-section {
+  margin-top: 20px;
+  border-top: 1px solid #fff;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+#last-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+   
+}
+
+#last-section p {
+  font-size: 1rem;
+  font-weight: 500;
+  
+}
+
+#last-section span {
+  font-weight: bold;
+  color: var(--blue);
+  
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background-color: var(--blue);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #0077b6;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 95%;
+  }
+}
+
+
